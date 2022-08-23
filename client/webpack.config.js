@@ -18,9 +18,9 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-        new HtmlWebpackPlugin({
-          title: 'Client Server',
+        new HtmlWebpackPlugin({ 
           template: './index.html',
+          title: 'Text editor'
         }),
         new InjectManifest({
           swSrc: './src-sw.js',
@@ -30,8 +30,8 @@ module.exports = () => {
         new WebpackPwaManifest({
           fingerprints: false,
           inject: true,
-          name: 'jate text editor',
-          short_name: 'jate',
+          name: 'Text editor',
+          short_name: 'editor',
           description: 'Just another text editor!',
           background_color: '#2F4F4F',
           theme_color: '#8B008B',
