@@ -1,6 +1,9 @@
 # Text Editor Application 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+
+To view a video of this applications functionality visit the following link: https://drive.google.com/file/d/1U8R-81tzAlQFcpowHH_wuA3DHuCUv4f5/view
+
   #Table of Content
   - [description](#Description)
   - [installation](#Installation)
@@ -10,52 +13,59 @@
   - [contact](#Contact)
 
   ## Description:
-  The purpose behind this project was to create a CMS-style blog site were developers can publish their blog posts and comment on other developers posts as well. This project will showcase an MVC application which will contain model classes, view templates, and controller classes.
+  The purpose behind this project was to build a text editor that runs in the browser and also functions offline. The app is a single-page application that meets the PWA criteria. It also features a number of data persistence techniques that serve as redundancy in case some of the options are not supported by the browser.
 
-  Challenges: This was one of the more tougher assignments and I did struggle to complete it. In the future I hope to be able to return to this project and hopefully with ease be able to implement the necessary changes to give the application its full functionality. For now, you are able to create an account, login & logout, enter your dashboard, view the post edit layout, although my create route isnt working properly so you wont be able to actually add the post. However, you can naviagte between the dashboard and the homepage. 
 
-  Below I have added an image that helped me conceptualize what MVC does:
+  Below you will be able to view a GIF displaying the functionality of this application: 
 
-   ![alt text](./img/mvc%20model.png)
+
+   ![alt text](./images/gif%20text-editor.gif)
 
   ## Installation:
   In order to be create this application the following technologies were utilized:
    
+    - HTML
+    - CSS
     - Express
-    - Express-session
-    - Express-handlebars
-    - Mysql2
-    - Sequelize
-    - Connect-session-sequelize
-    - dotenv
-    - bcrypt
+    - Node
+    - idb
+    - webpack
+    - Javascript
 
-  One of the coolest parts about this project was using this authorization function throughout the routes to allow different levels of access between authorized and unauthorized users:
+  Something valueable I learned from this application was the ability to create an application that also runs offline. I also wanted to display the applications IndexedDB storage that can be accessed through Chrome dev tools:
 
-  ![alt text](./img/auth%20function.png)
+  ![alt text](./images/storage.png)
 
-  Below, I have displayed how I created the comment model below:
+  Below, I have attached an image that displays the applications manifest.json file:
 
-   ![alt text](./img/comment%20model.png )
+   ![alt text](./images/manifest%20text%20editor.png)
 
-  Below, I have displayed routes to display html content:
+  Here, you can view the application's registered service worker:
 
-   ![alt text](./img/index.png)
+   ![alt text](./images/sw%20text%20editor.png)
 
 
 
   ## Usage:
+  This application can be utilized by visiting the link below:
 
-  When you first visit this blog site you will be able to view blog post others or yourself have created. In order to get the full functionality of this site you will need create an account or login in. Once the user is logged in they will be able to navigate from the dashboard, to the homepage, and the ability to logout. The homepage will exhibit post made by users including our own. The dashboard is where the user will be able to view all their post made, be able to create a post, update or delete it. This application will also allow user to interact with each other by allowing authorized users to make comment on psot.
+  If you would like to use this application offline then you can simply click install located on the left hand side of the applciation.
 
- 
-  ```
-  code-snippet
+  In order to install the necessary dependencies for this application the following command can be ran within the command line:
 
-  ```
+  - npm install
+
+  After you will need to build the application utilizing the following command:
+  - npm run build
+
+  Finally you can access this within http://localhost:3000 after running: 
+
+  - npm run start
+
+  or you can vist the heroku link above.
+
 
   ## Credits:
-  MVC image provided by: https://www.geeksforgeeks.org/benefit-of-using-mvc/
   I utilized https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba to generate markdown license badges.
 
  
@@ -63,4 +73,7 @@
   MIT 
 
   ## Contact:
+  If you have any question, email me at:  
   allleizq@gmail.com
+  I can also be reached through linkedIn:  
+  https://www.linkedin.com/feed/
