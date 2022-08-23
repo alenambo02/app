@@ -21,7 +21,31 @@ module.exports = () => {
         new HtmlWebpackPlugin({
           title: 'Client Server',
           template: './index.html',
+        }),
+        new InjectManifest({
+          swSrc: './src-sw.js',
+          swDest: 'src-sw.js'
+        }),
+        //manifest.json
+        new WebpackPwaManifest({
+          fingerprints: false,
+          inject: true,
+          name: 'Text Editor',
+          short_name: 'Texty-text',
+          description: 'Just another text editor!',
+          background_color: '#7eb4e2',
+          theme_color: '#7eb4e2A',
+          start_url: './',
+          publicPath: './',
+          icons: [
+            {
+              src: path.resolve('src/images/logo.png'),
+              sizes: [96, 128, 192, 256, 384, 512],
+              destination: path.join('assets', 'icons'),
+            },
+          ],
         })
+      
     ],
 
     module: {
