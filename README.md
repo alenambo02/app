@@ -48,6 +48,7 @@ To view a video of this applications functionality visit the following link: htt
 
   ## Usage:
   This application can be utilized by visiting the link below:
+  https://evening-cliffs-79205.herokuapp.com/
 
   If you would like to use this application offline then you can simply click install located on the left hand side of the applciation.
 
